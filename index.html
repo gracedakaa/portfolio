@@ -454,6 +454,96 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+        
+        .proof-card h3,
+        .capability-card h3,
+        .testimonial-card h3 {
+            font-size: 20px;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+        
+        .proof-card p,
+        .capability-card p {
+            color: var(--ink-soft);
+            font-size: 14px;
+        }
+        
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+        
+        .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        
+        .pill-list span {
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--surface-soft);
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        .capability-card .signature-list {
+            margin-top: 16px;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #201726 0%, #4f3277 100%);
+            color: #fff;
+            border: none;
+        }
+        
+        .quote-mark {
+            display: block;
+            font-family: 'Fraunces', serif;
+            font-size: 60px;
+            line-height: 0.8;
+            color: #dccbf7;
+            margin-bottom: 18px;
+        }
+        
+        .testimonial-quote {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(1.35rem, 2.4vw, 2rem);
+            line-height: 1.4;
+            color: #fff;
+        }
+        
+        .testimonial-context {
+            margin-top: 18px;
+            color: rgba(255, 255, 255, 0.74);
+            font-size: 13px;
+        }
+        
+        .testimonial-author {
+            display: grid;
+            gap: 3px;
+            margin-top: 20px;
+        }
+        
+        .testimonial-author strong {
+            font-size: 15px;
+        }
+        
+        .testimonial-author span {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 13px;
+        }
+        
         .about-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
@@ -782,6 +872,8 @@
         @media (max-width: 980px) {
             .hero,
             .about-grid,
+            .proof-grid,
+            .capability-grid,
             .services-grid,
             .experience-grid,
             .bottom-grid {
@@ -859,16 +951,16 @@
             <div class="hero-copy">
                 <div class="eyebrow">Professional Portfolio</div>
                 <h1>Grace Daka</h1>
-                <div class="hero-role">Game Localization Linguist and Narrative Specialist</div>
-                <p class="hero-text">Grace brings together multilingual language craft, localization quality, cultural adaptation, and technical understanding to help teams create content that feels natural, accurate, and audience-ready across French, Swahili, Lingala, Chichewa,
-                    and English.</p>
+                <div class="hero-role">English-to-French Localization Linguist and Multilingual Narrative Specialist</div>
+                <p class="hero-text">Grace helps teams deliver natural, audience-ready content across editorial, technical, and mission-driven work with strong command of French, Swahili, Lingala, Chichewa, and English.</p>
                 <div class="hero-actions">
                     <a class="button button-primary" href="mailto:gracedakaa@gmail.com">Contact Grace</a>
-                    <a class="button button-secondary" href="#experience">View Experience</a>
+                    <a class="button button-secondary" href="#projects">View Projects</a>
                     <a class="button button-secondary" href="https://gracedakaa.github.io/grace-cv/" target="_blank" rel="noopener">View CV</a>
                 </div>
                 <div class="hero-tags">
-                    <span>Translation</span>
+                    <span>English to French</span>
+                    <span>Client reviewed</span>
                     <span>Transcreation</span>
                     <span>Linguistic QA</span>
                     <span>AI Evaluation</span>
@@ -878,7 +970,7 @@
             <div class="hero-visual">
                 <div class="photo-shell">
                     <div class="photo-frame">
-                        <img src="assets/grace.jpg" alt="Grace Daka portrait" width="1000" height="1000" fetchpriority="high" decoding="async" />
+                        <img src="assets/grace.jpg" alt="Grace Daka portrait" width="1000" height="1000" decoding="async" />
                     </div>
                     <div class="photo-note">
                         <strong>Available for remote collaboration</strong>
@@ -896,13 +988,37 @@
             </div>
             <div class="stat">
                 <span class="stat-icon"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6"/></svg></span>
-                <strong>500+</strong>
-                <span>Structured prompt and test sets reviewed in multilingual AI work</span>
+                <strong>4</strong>
+                <span>Verified ProZ Pro Bono translation projects featured in this portfolio</span>
             </div>
             <div class="stat">
                 <span class="stat-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-                <strong>10,000+</strong>
-                <span>Educators reached through AI product work highlighted in the CV</span>
+                <strong>500+</strong>
+                <span>Structured prompt and test sets reviewed in multilingual AI work</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <div class="section-title-wrap">
+                    <span class="kicker">Trust & Verification</span>
+                    <h2>Clear proof that work is delivered and appreciated</h2>
+                </div>
+                <p>Grace’s portfolio combines practical language skill with verified volunteer delivery, careful review, and reliable remote collaboration.</p>
+            </div>
+            <div class="proof-grid">
+                <article class="panel proof-card">
+                    <h3>Client-reviewed project delivery</h3>
+                    <p>Featured English-to-French portfolio samples were delivered through real ProZ Pro Bono assignments and reviewed after submission.</p>
+                </article>
+                <article class="panel proof-card">
+                    <h3>Mission-driven translation support</h3>
+                    <p>Projects include nonprofit, editorial, technical, and public-interest content where tone, clarity, and meaning all matter.</p>
+                </article>
+                <article class="panel proof-card">
+                    <h3>Reliable remote collaboration</h3>
+                    <p>Grace works comfortably across distributed teams with attention to deadlines, terminology consistency, and final delivery quality.</p>
+                </article>
             </div>
         </section>
 
@@ -953,6 +1069,50 @@
                     <div class="service-index">03</div>
                     <h3>AI Language Evaluation</h3>
                     <p>Annotation, ranking, comparison, and structured feedback for AI-generated responses, multilingual prompts, and natural language quality assessment.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <div class="section-title-wrap">
+                    <span class="kicker">Language Pairs & Tools</span>
+                    <h2>Practical strengths clients often want to confirm quickly</h2>
+                </div>
+                <p>This section makes Grace’s working language pairs and delivery setup easier to scan for clients, recruiters, and collaborators.</p>
+            </div>
+            <div class="capability-grid">
+                <article class="panel capability-card">
+                    <h3>Working language pairs</h3>
+                    <p>Grace is especially well positioned for English-to-French work, with wider multilingual support across African and international content needs.</p>
+                    <div class="pill-list">
+                        <span>English to French</span>
+                        <span>French to English</span>
+                        <span>Swahili to English</span>
+                        <span>English to Swahili</span>
+                        <span>Lingala to English</span>
+                        <span>English to Lingala</span>
+                        <span>Chichewa to English</span>
+                        <span>English to Chichewa</span>
+                    </div>
+                </article>
+
+                <article class="panel capability-card">
+                    <h3>Tools and delivery workflow</h3>
+                    <p>Grace works with structured review habits that support clean handoff, terminology consistency, and client-ready formatting.</p>
+                    <div class="pill-list">
+                        <span>Microsoft Word</span>
+                        <span>Google Docs</span>
+                        <span>Excel and spreadsheets</span>
+                        <span>Terminology tracking</span>
+                        <span>Quality review</span>
+                        <span>Final QA pass</span>
+                    </div>
+                    <ul class="signature-list">
+                        <li>Careful source review before translation or adaptation begins.</li>
+                        <li>Attention to tone, register, consistency, and natural target-language flow.</li>
+                        <li>Final delivery checks for formatting, meaning, and readability.</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -1027,6 +1187,26 @@
                     </div>
                 </article>
             </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <div class="section-title-wrap">
+                    <span class="kicker">Testimonial</span>
+                    <h2>Recognition from a ProZ Pro Bono delivery</h2>
+                </div>
+                <p>A thank-you note received after contribution to a multilingual ProZ Pro Bono project for Progressive International and Jacobin.</p>
+            </div>
+            <article class="panel testimonial-card">
+                <span class="quote-mark">“</span>
+                <p class="testimonial-quote">Your support helps us continue providing high-quality translations to organizations that need them most. We truly appreciate your time and dedication to the ProZ Pro Bono community.</p>
+                <p class="testimonial-context">Project: Progressive International - Wire - Jacobin - Starbucks Workers Are Calling for a Nationwide Boycott · Project ID: 2026_413_PI_Jacobin_Strabucks_Workers_Calling_for_Boycott_1279words · Delivered on 15 September 2026 · Language
+                    pair included English to French.</p>
+                <div class="testimonial-author">
+                    <strong>Cynthia Ferrer</strong>
+                    <span>Program Administrator, ProZ Pro Bono</span>
+                </div>
+            </article>
         </section>
 
         <section class="section" id="experience">
@@ -1123,8 +1303,8 @@
 
                 <article class="side-card contact-card" id="contact">
                     <span class="kicker contact-kicker">Contact</span>
-                    <h3>Open to remote localization and narrative work</h3>
-                    <p>Available for translation, review, LQA, narrative support, and multilingual AI language evaluation.</p>
+                    <h3>Open to remote English-to-French localization and multilingual review work</h3>
+                    <p>Available for translation, review, LQA, narrative support, multilingual AI language evaluation, and client test pieces.</p>
                     <div class="contact-links">
                         <a href="mailto:gracedakaa@gmail.com">
                             <span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
