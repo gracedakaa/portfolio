@@ -586,6 +586,30 @@
             background: var(--accent);
         }
         
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        
+        .project-tags span {
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: var(--surface-soft);
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 18px;
+        }
+        
         .bottom-grid {
             display: grid;
             grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -825,6 +849,7 @@
             <nav class="nav">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -928,6 +953,78 @@
                     <div class="service-index">03</div>
                     <h3>AI Language Evaluation</h3>
                     <p>Annotation, ranking, comparison, and structured feedback for AI-generated responses, multilingual prompts, and natural language quality assessment.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-head">
+                <div class="section-title-wrap">
+                    <span class="kicker">Projects</span>
+                    <h2>Verified volunteer translation projects</h2>
+                </div>
+                <p>These English-to-French volunteer projects were completed through the ProZ Bono community and each delivery was successfully reviewed and verified by the client.</p>
+            </div>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <h3>Passolo Demystified</h3>
+                    <div class="meta">Volunteer Translation · English to French · ProZ Bono Community</div>
+                    <p>Localized technical documentation with careful handling of software terminology, instructional flow, and reader clarity.</p>
+                    <div class="project-tags">
+                        <span>Technical content</span>
+                        <span>Client reviewed</span>
+                        <span>Verified delivery</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="button button-secondary" href="assets/translation-projects/task-1/source-passolo-demystified-en.docx" target="_blank" rel="noopener">Source file</a>
+                        <a class="button button-secondary" href="assets/translation-projects/task-1/translation-passolo-demystified-fr.docx" target="_blank" rel="noopener">French translation</a>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <h3>Declaration of the Rights of Caribbean Peoples</h3>
+                    <div class="meta">Volunteer Translation · English to French · ProZ Bono Community</div>
+                    <p>Translated a historical and rights-focused text while preserving formal tone, political meaning, and document consistency.</p>
+                    <div class="project-tags">
+                        <span>Historical text</span>
+                        <span>Client reviewed</span>
+                        <span>Verified delivery</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="button button-secondary" href="assets/translation-projects/task-2/source-caribbean-rights-en.docx" target="_blank" rel="noopener">Source file</a>
+                        <a class="button button-secondary" href="assets/translation-projects/task-2/translation-caribbean-rights-fr.doc" target="_blank" rel="noopener">French translation</a>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <h3>The Breach: Austerity Article Translation</h3>
+                    <div class="meta">Volunteer Translation · English to French · ProZ Bono Community</div>
+                    <p>Adapted a long-form article into French with attention to journalistic tone, readability, and meaning across complex political language.</p>
+                    <div class="project-tags">
+                        <span>Editorial content</span>
+                        <span>Client reviewed</span>
+                        <span>Verified delivery</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="button button-secondary" href="assets/translation-projects/task-3/source-breach-austerity-en.docx" target="_blank" rel="noopener">Source file</a>
+                        <a class="button button-secondary" href="assets/translation-projects/task-3/translation-breach-austerity-fr.docx" target="_blank" rel="noopener">French translation</a>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <h3>Starbucks Boycott and Listings Samples</h3>
+                    <div class="meta">Volunteer Translation · English to French · ProZ Bono Community</div>
+                    <p>Delivered French localization for a current-affairs article and included structured listings content as an additional translation sample.</p>
+                    <div class="project-tags">
+                        <span>News content</span>
+                        <span>Listings sample</span>
+                        <span>Verified delivery</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="button button-secondary" href="assets/translation-projects/task-4/source-starbucks-boycott-en.docx" target="_blank" rel="noopener">Source file</a>
+                        <a class="button button-secondary" href="assets/translation-projects/task-4/translation-starbucks-boycott-fr.docx" target="_blank" rel="noopener">French translation</a>
+                        <a class="button button-secondary" href="assets/translation-projects/task-4/global-listings-translation-sample.xlsx" target="_blank" rel="noopener">Spreadsheet sample</a>
+                    </div>
                 </article>
             </div>
         </section>
